@@ -7,4 +7,4 @@ This is an example site for the Into to Front-end Web Development Course at The 
 
 # Contact
 
-email: Hahaha@gmail.com
+email: example@gmail.com
