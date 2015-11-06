@@ -1,0 +1,73 @@
+@import url(https://fonts.googleapis.com/css?family=Elsie+Swash+Caps:400,900);
+@import url(https://fonts.googleapis.com/css?family=Clicker+Script);
+/* This is a comment. */
+
+/* CSS Syntax:
+
+selector {
+  property: value;
+  Property: value;
+  }
+
+  */
+
+  /* Type selector */
+
+p { /*select all <p> */
+  font-size: 16px; /* 16px, ?pt (depends on browser), 100%, 1em (width of letter "m" -take defalut (16px).
+          can take any pixel size/16 = X ems */
+  line-height: 1.5em;
+  font-family: Georgia, "New Times Roman", serif;
+}
+
+figcaption {
+  /*font-weight: normal;
+  font-size: 0.75em;
+  line-height: 1.5em;
+  font-family: Georgia, "New Times Roman", serif; */
+  font: normal 0.75em/1.5em 'Elsie Swash Caps', cursive;
+  color: #777; /* #8844DD -> 84D (if all same) rgba(255,0,0,1) <-last is opacity*/
+  /* text-align: right; */ 
+}
+
+/* Class selectors (can be applied to as many elements as you like) */
+
+.milk-text { /* select elements with class="milk-text"} */
+  font: bold 1.6em 'Elsie Swash Caps', cursive;
+  color: white;
+  text-shadow: 0 2px 3px #000; /* (horixontal offset) (vertical offset) (blur radius) (color) */
+}
+
+/* ID selector (apply to one unique element per page) */
+
+#logo {
+  background: aqua
+}
+
+/* Descendent Selector */
+
+#logo h1 { /* styles <h1> with id="logo" */
+  font-family: 'Clicker Script', cursive;
+}
+
+#logo h2 { /* styles <h1> with id="logo" */
+  font-family: 'Elsie Swash Caps', cursive;
+}
+
+/* Psudo Selector 
+- Select element based on relationship 
+to other elements or event state*/
+
+#details a:link #details a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+#details a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+#details a:active {
+  color: red;
+}
